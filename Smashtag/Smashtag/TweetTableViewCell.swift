@@ -67,7 +67,7 @@ class TweetTableViewCell: UITableViewCell
     }
     
     // sets the color of NSMutableAttributedString by mention
-    private func setColor(tweet: Tweet) -> NSMutableAttributedString {
+    private func setColor(tweet: Twitter.Tweet) -> NSMutableAttributedString {
         let text = tweet.text
         let attributedText = NSMutableAttributedString(string: text)
         attributedText.setMentionsColor(mentions: tweet.userMentions, color: Color.user)
