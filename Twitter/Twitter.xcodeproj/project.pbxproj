@@ -14,23 +14,6 @@
 		DA1365851E4F8BFF00F66D3D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1365801E4F8BFF00F66D3D /* User.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DEF229C61EDA613700CFFF53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEF229C21EDA613700CFFF53 /* Smashtag.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EC7D5EBB1E4BF94B009A2E85;
-			remoteInfo = Smashtag;
-		};
-		DEF229CC1EDA613900CFFF53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEF229C81EDA613900CFFF53 /* Smashtag.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EC7D5EBB1E4BF94B009A2E85;
-			remoteInfo = Smashtag;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		DA1365711E4F8BE000F66D3D /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1365751E4F8BE000F66D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,8 +22,6 @@
 		DA13657E1E4F8BFF00F66D3D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		DA13657F1E4F8BFF00F66D3D /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		DA1365801E4F8BFF00F66D3D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DEF229C21EDA613700CFFF53 /* Smashtag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Smashtag.xcodeproj; path = "../L9 Smashtag/Smashtag.xcodeproj"; sourceTree = "<group>"; };
-		DEF229C81EDA613900CFFF53 /* Smashtag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Smashtag.xcodeproj; path = "../L9 Smashtag/Smashtag.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +38,6 @@
 		DA1365671E4F8BE000F66D3D = {
 			isa = PBXGroup;
 			children = (
-				DEF229C81EDA613900CFFF53 /* Smashtag.xcodeproj */,
-				DEF229C21EDA613700CFFF53 /* Smashtag.xcodeproj */,
 				DA1365731E4F8BE000F66D3D /* Twitter */,
 				DA1365721E4F8BE000F66D3D /* Products */,
 			);
@@ -83,22 +62,6 @@
 				DA1365751E4F8BE000F66D3D /* Info.plist */,
 			);
 			path = Twitter;
-			sourceTree = "<group>";
-		};
-		DEF229C31EDA613700CFFF53 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DEF229C71EDA613700CFFF53 /* Smashtag.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DEF229C91EDA613900CFFF53 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DEF229CD1EDA613900CFFF53 /* Smashtag.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,39 +121,12 @@
 			mainGroup = DA1365671E4F8BE000F66D3D;
 			productRefGroup = DA1365721E4F8BE000F66D3D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DEF229C31EDA613700CFFF53 /* Products */;
-					ProjectRef = DEF229C21EDA613700CFFF53 /* Smashtag.xcodeproj */;
-				},
-				{
-					ProductGroup = DEF229C91EDA613900CFFF53 /* Products */;
-					ProjectRef = DEF229C81EDA613900CFFF53 /* Smashtag.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DA1365701E4F8BE000F66D3D /* Twitter */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DEF229C71EDA613700CFFF53 /* Smashtag.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Smashtag.app;
-			remoteRef = DEF229C61EDA613700CFFF53 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DEF229CD1EDA613900CFFF53 /* Smashtag.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Smashtag.app;
-			remoteRef = DEF229CC1EDA613900CFFF53 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DA13656F1E4F8BE000F66D3D /* Resources */ = {

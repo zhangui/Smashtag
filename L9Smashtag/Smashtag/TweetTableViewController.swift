@@ -39,6 +39,10 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
             tableView.reloadData()
             searchForTweets()
             title = searchText
+            // adds search to recent queries
+            if let text = searchText {
+                RecentQueries.add(term: text)
+            }
         }
     }
     
@@ -161,7 +165,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "show mentions" {
+            if identifier == "showMentions" {
                 if let mtvc = segue.destination as? MentionsTableViewController {
                     if let cell = sender as? TweetTableViewCell {
                         mtvc.tweet = cell.tweet

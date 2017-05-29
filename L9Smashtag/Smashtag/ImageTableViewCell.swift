@@ -9,7 +9,7 @@
 import UIKit
 
 class ImageTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var tweetImage: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
@@ -41,13 +41,8 @@ class ImageTableViewCell: UITableViewCell {
                         self?.tweetImage?.image = UIImage(data: imageData)
                         self?.spinner.stopAnimating()
                     }
-
                 }
             }
-            
         }
     }
-    
-    
-    
 }

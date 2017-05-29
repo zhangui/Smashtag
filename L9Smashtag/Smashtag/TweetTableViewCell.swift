@@ -33,10 +33,11 @@ class TweetTableViewCell: UITableViewCell
         tweetUserLabel?.text = tweet?.user.description
         
         if let profileImageURL = tweet?.user.profileImageURL {
-            // FIXME: blocks main thread
+            // sends to different thread
             let urlContents = try? Data(contentsOf: profileImageURL)
             DispatchQueue.global(qos: .userInitiated) .async { [weak self] in
                 if let imageData = urlContents, profileImageURL == self?.tweet?.user.profileImageURL {
+                    // does UI stuff on mainthread
                     DispatchQueue.main.async {
                         self?.tweetProfileImageView?.image = UIImage(data: imageData)
                     }
@@ -65,6 +66,7 @@ class TweetTableViewCell: UITableViewCell
         static let url = UIColor.gray
     }
     
+    // sets the color of NSMutableAttributedString by mention
     private func setColor(tweet: Tweet) -> NSMutableAttributedString {
         let text = tweet.text
         let attributedText = NSMutableAttributedString(string: text)
@@ -75,6 +77,7 @@ class TweetTableViewCell: UITableViewCell
     }
 }
 
+// changes the color of every mention in Mention array
 private extension NSMutableAttributedString {
     func setMentionsColor(mentions: [Mention], color: UIColor) {
         for mention in mentions {
